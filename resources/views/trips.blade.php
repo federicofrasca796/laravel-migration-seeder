@@ -4,5 +4,7 @@
 
 
 @section('main-content')
-    <h1 class="text-center"> Test </h1>
+    <h1 class="text-center my-5"> Avaiable trips </h1>
+
+
 @endsection
