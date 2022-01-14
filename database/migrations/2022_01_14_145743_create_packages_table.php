@@ -15,9 +15,9 @@ class CreatePackagesTable extends Migration
     {
         Schema::create('packages', function (Blueprint $table) {
             $table->id();
-            $table->string('trip_name', 100);
+            $table->string('trip_name');
             $table->text('trip_description')->nullable();
-            $table->date('trip_date');
+            $table->date('trip_date')->nullable();
             $table->float('trip_price', 2, 2);
             $table->timestamps();
         });

@@ -26,7 +26,7 @@ class UpdatePackagesTable extends Migration
     public function down()
     {
         Schema::table('packages', function (Blueprint $table) {
-            $table->dropColumn('vote');
+            $table->dropColumn('discount');
         });
     }
 }
