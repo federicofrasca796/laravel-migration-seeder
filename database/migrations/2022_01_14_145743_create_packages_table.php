@@ -18,7 +18,7 @@ class CreatePackagesTable extends Migration
             $table->string('trip_name');
             $table->text('trip_description')->nullable();
             $table->date('trip_date')->nullable();
-            $table->float('trip_price', 2, 2);
+            $table->float('trip_price', 5, 2);
             $table->timestamps();
         });
     }
