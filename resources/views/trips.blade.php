@@ -1,7 +1,8 @@
 @extends('layouts.app')
-
 @section('page-name', 'Trips')
-<h1> Test </h1>
-@section('main-content')
+@section('custom-css', asset('css/trips.css'))
 
+
+@section('main-content')
+    <h1 class="text-center"> Test </h1>
 @endsection
