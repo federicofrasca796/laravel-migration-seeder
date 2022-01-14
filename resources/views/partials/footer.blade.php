@@ -1,3 +1,3 @@
-<footer id="site_footer bg-dark text-white p-3 fs-2">
-    {{-- Frascà Travels Copyraided. --}}
+<footer id="site_footer" class="text-muted fst-italic">
+    <p class="text-center">Frascà Travels Copyraided<sup>&copy;</sup></p>
 </footer>

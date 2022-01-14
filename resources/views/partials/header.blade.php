@@ -11,7 +11,7 @@
                 <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                 </ul>
                 <form class="d-flex my-2 my-lg-0">
-                    <input class="form-control me-sm-2" type="text" placeholder="Search travels">
+                    <input class="form-control me-sm-2" type="text" placeholder="Search travels (if you can)">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form>
             </div>
