@@ -1,5 +1,6 @@
 <?php
 
+use Faker\Generator as Faker;
 use App\Models\Package;
 use Illuminate\Database\Seeder;
 
@@ -10,7 +11,7 @@ class PackagesSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
+    public function run(Faker $faker)
     {
         $trips = [
             [
@@ -55,7 +56,7 @@ class PackagesSeeder extends Seeder
             ],
         ];
 
-        foreach ($trips as $trip) {
+        /* foreach ($trips as $trip) {
             $newTrip = new Package();
             $newTrip->img = $trip['img'];
             $newTrip->trip_name = $trip['title'];
@@ -63,6 +64,17 @@ class PackagesSeeder extends Seeder
             $newTrip->trip_date = $trip['date'];
             $newTrip->trip_price = $trip['price'];
             $newTrip->discount = $trip['discount'];
+            $newTrip->save();
+        }
+        */
+        for ($i = 0; $i < 9; $i++) {
+            $newTrip = new Package();
+            $newTrip->img = $faker->imageUrl(640, 480, 'travel', true);
+            $newTrip->trip_name = $faker->word();
+            $newTrip->trip_description = $faker->sentence(8);
+            $newTrip->trip_date = $faker->date('Y-m-d', '2022-12-31');
+            $newTrip->trip_price = $faker->randomFloat(2, 0, 999.99);
+            $newTrip->discount = $faker->randomDigit(0, 70);
             $newTrip->save();
         }
     }
