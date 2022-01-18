@@ -15,3 +15,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomepageController@homepage');
 Route::get('/trips', 'TripController@trips');
+Route::get('/blog', 'PostController@blog');

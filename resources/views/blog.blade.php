@@ -1,11 +1,11 @@
 @extends('layouts.app')
-@section('page-name', 'Home')
+@section('page-name', 'Blog')
 {{-- @section('custom-css', asset('css/trips.css')) --}}
 
 
 @section('main-content')
-    <main id="home_main">
-        <h1 class="text-center">Welcome to FrascàTravels</h1>
+    <main id="blog_main">
+        <h1 class="text-center">Blog</h1>
     </main>
 
 
