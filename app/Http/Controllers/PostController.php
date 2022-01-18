@@ -12,11 +12,11 @@ class PostController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function blog()
+    public function index()
     {
         $posts = Post::all();
         // ddd($posts);
-        return view('blog', compact('posts'));
+        return view('blog.index', compact('posts'));
     }
 
     /**
@@ -48,7 +48,8 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        //
+        ddd($post);
+        return view('blog.show', compact('post'));
     }
 
     /**

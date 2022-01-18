@@ -3,7 +3,7 @@
 return [
     [
         'name' => 'Home',
-        'view_name' => '/',
+        'view_name' => 'home',
     ],
     [
         'name' => 'Travel Packages',

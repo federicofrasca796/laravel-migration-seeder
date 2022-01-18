@@ -7,10 +7,16 @@ use Illuminate\Http\Request;
 
 class TripController extends Controller
 {
-    public function trips()
+    public function index()
     {
         $packages = Package::all();
         // ddd($packages);
-        return view('trips', compact('packages'));
+        return view('trips.index', compact('packages'));
+    }
+
+    public function show(Package $trip)
+    {
+        ddd($trip);
+        return view('trips.show', compact('trip'));
     }
 }

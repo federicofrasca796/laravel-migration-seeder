@@ -18,7 +18,8 @@
                                     {{ $package->trip_description }}
                                 <div class="text-end">{{ $package->trip_date }}</div>
                                 </p>
-                                <a href="#" class="btn btn-primary">{{ $package->trip_price }}€</a>
+                                <a href="{{ route('trip', ['trip_id' => $package->id]) }}"
+                                    class="btn btn-primary">{{ $package->trip_price }}€</a>
                             </div>
                         </div>
                     </div>

@@ -15,7 +15,7 @@ $navlinks = config('navlinks');
                 <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                     @foreach ($navlinks as $link)
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ $link['view_name'] }}">{{ $link['name'] }}</a>
+                            <a class="nav-link" href="{{ route($link['view_name']) }}">{{ $link['name'] }}</a>
                         </li>
                     @endforeach
                 </ul>
