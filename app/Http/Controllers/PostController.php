@@ -48,7 +48,7 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        ddd($post);
+        // ddd($post->heading);
         return view('blog.show', compact('post'));
     }
 

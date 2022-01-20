@@ -18,7 +18,7 @@
                                     {{ strlen($post->content) > 10 ? substr($post->content, 0, 10) . '...' : $post->content }}
                                 <div class="text-end">{{ $post->date }}</div>
                                 </p>
-                                <a href="{{ route('post', ['post_id' => $post->id]) }}" class="btn btn-secondary">Read
+                                <a href="{{ route('post', ['post' => $post->id]) }}" class="btn btn-secondary">Read
                                     more...</a>
                             </div>
                         </div>

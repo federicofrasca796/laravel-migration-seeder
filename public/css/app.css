@@ -11243,8 +11243,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-#site_footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+#trips_main, #blog_main {
+  min-height: 80vh;
+}
+
+.pagination {
+  justify-content: center;
 }

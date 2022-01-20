@@ -1,7 +1,16 @@
 @use 'bootstrap';
 
-#site_footer{
-    position:absolute;
-    bottom: 0;
-    width: 100%;
+// #site_footer{
+//     position: fixed;
+//     bottom: 0;
+//     width: 100%;
+//     background: linear-gradient(0deg, white, transparent);
+// }
+
+#trips_main, #blog_main{
+    min-height: 80vh;
+}
+
+.pagination{    
+    justify-content: center;
 }

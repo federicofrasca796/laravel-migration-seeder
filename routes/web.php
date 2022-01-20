@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomepageController@homepage')->name('home');
 Route::get('/trips', 'TripController@index')->name('trips');
-Route::get('/trip/{trip_id}', 'TripController@show')->name('trip');
+Route::get('/trip/{trip}', 'TripController@show')->name('trip');
 Route::get('/blog', 'PostController@index')->name('blog');
-Route::get('/blog/{post_id}', 'PostController@show')->name('post');
+Route::get('/blog/{post}', 'PostController@show')->name('post');
+
+// Route::resource('blog', 'PostController');

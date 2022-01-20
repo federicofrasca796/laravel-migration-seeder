@@ -18,7 +18,7 @@
                                     {{ $package->trip_description }}
                                 <div class="text-end">{{ $package->trip_date }}</div>
                                 </p>
-                                <a href="{{ route('trip', ['trip_id' => $package->id]) }}"
+                                <a href="{{ route('trip', ['trip' => $package->id]) }}"
                                     class="btn btn-primary">{{ $package->trip_price }}€</a>
                             </div>
                         </div>
@@ -27,6 +27,10 @@
                     <p class="text-center fs-5 fst-italic text-light">No avaiable voyages at the moment. Try again later.
                     </p>
                 @endforelse
+
+                <div class="mx-auto">
+                    {{ $packages->links() }}
+                </div>
             </div>
         </div>
     </main>
